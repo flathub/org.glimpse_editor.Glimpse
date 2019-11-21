@@ -572,7 +572,8 @@
         {
           "type": "git",
           "url": "https://github.com/glimpse-editor/glimpse",
-          "branch": "dev-g210"
+          "branch": "v0.1.0",
+          "commit": "b6b4dd01948b9529fbbaca7b219caeacbc43ace3"
         }
       ],
       "cleanup": [
