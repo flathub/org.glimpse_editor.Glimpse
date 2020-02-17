@@ -572,7 +572,7 @@
         {
           "type": "git",
           "url": "https://github.com/glimpse-editor/glimpse",
-          "branch": "dev-g210"
+          "branch": "beta-g210"
         }
       ],
       "cleanup": [
