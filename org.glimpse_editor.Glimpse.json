@@ -573,7 +573,7 @@
           "type": "git",
           "url": "https://github.com/glimpse-editor/glimpse",
           "branch": "v0.1.2",
-          "commit": "f32663b334943e16a489f0c8bb3b0d63f42f0544"
+          "commit": "30a4913df8e11635bfdb16029da2237e29e4053a"
         }
       ],
       "cleanup": [
