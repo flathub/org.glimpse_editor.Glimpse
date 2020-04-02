@@ -1,7 +1,7 @@
 {
   "id": "org.glimpse_editor.Glimpse",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.34",
+  "runtime-version": "3.36",
   "sdk": "org.gnome.Sdk",
   "command": "glimpse",
   "finish-args": [
@@ -572,8 +572,8 @@
         {
           "type": "git",
           "url": "https://github.com/glimpse-editor/glimpse",
-          "branch": "v0.1.2",
-          "commit": "30a4913df8e11635bfdb16029da2237e29e4053a"
+          "branch": "v0.1.2r2",
+          "commit": "6d48fdac69d75360eabe971fa9e2cce78fe90a99"
         }
       ],
       "cleanup": [
