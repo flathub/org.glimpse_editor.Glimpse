@@ -521,9 +521,8 @@
     },
     {
       "name": "babl",
-      "config-opts": [
-        "--disable-docs"
-      ],
+      "buildsystem": "meson",
+      "config-opts": [ "-Dwith-docs=false" ],
       "sources": [
         {
           "type": "git",
@@ -531,19 +530,13 @@
           "tag": "BABL_0_1_74",
           "commit": "501c71495c9f4670ee066e3abe2ad6710e954084"
         }
-      ],
-      "cleanup": [
-        "*.la",
-        "/include",
-        "/lib/pkgconfig"
       ]
     },
     {
       "name": "gegl",
-      "config-opts": [
-        "--disable-docs",
-        "--disable-introspection"
-      ],
+      "buildsystem": "meson",
+      "config-opts": [ "-Ddocs=false" ],
+      "cleanup": [ "/bin" ],
       "sources": [
         {
           "type": "git",
@@ -551,12 +544,6 @@
           "tag": "GEGL_0_4_22",
           "commit": "14096e785792ef42dbf08510e8093996c611828f"
         }
-      ],
-      "cleanup": [
-        "*.la",
-        "/bin",
-        "/include",
-        "/lib/pkgconfig"
       ]
     },
     {
