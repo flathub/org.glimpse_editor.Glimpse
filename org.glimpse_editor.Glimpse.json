@@ -553,8 +553,9 @@
         "--disable-gimp-console",
         "--disable-gtk-doc",
         "--disable-gtk-doc-html",
-        "--disable-check-update",
-        "--with-icc-directory=/run/host/usr/share/color/icc/"
+        "--with-icc-directory=/run/host/usr/share/color/icc/",
+        "--without-webkit",
+        "--disable-check-update"
       ],
       "sources": [
         {
