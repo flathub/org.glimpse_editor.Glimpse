@@ -1,7 +1,7 @@
 {
   "id": "org.glimpse_editor.Glimpse",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.36",
+  "runtime-version": "3.38",
   "sdk": "org.gnome.Sdk",
   "command": "glimpse",
   "finish-args": [
@@ -16,61 +16,6 @@
   "modules": [
     "shared-modules/python2.7/python-2.7.json",
     "shared-modules/gtk2/gtk2.json",
-    {
-      "name": "webkitgtk",
-      "config-opts": [
-        "--disable-battery-status",
-        "--disable-credential-storage",
-        "--disable-gamepad",
-        "--disable-geolocation",
-        "--disable-gtk-doc",
-        "--disable-spellcheck",
-        "--disable-static",
-        "--disable-video",
-        "--disable-web-audio",
-        "--disable-webkit2",
-        "--with-gtk=2.0"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://www.webkitgtk.org/releases/webkitgtk-2.4.11.tar.xz",
-          "sha256": "588aea051bfbacced27fdfe0335a957dca839ebe36aa548df39c7bbafdb65bf7"
-        },
-        {
-          "type": "patch",
-          "path": "patches/webkitgtk-2.4.11.patch"
-        }
-      ],
-      "build-options": {
-        "cflags": "-O2 -g -pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive",
-        "cflags-override": true,
-        "cxxflags": "-O2 -g -pipe -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive",
-        "cxxflags-override": true,
-        "env": {
-          "PYTHON": "/usr/bin/python3"
-        },
-        "arch": {
-          "aarch64": {
-            "cflags": "-O2 -g -pipe -DENABLE_YARR_JIT=0 -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive",
-            "cflags-override": true,
-            "cxxflags": "-O2 -g -pipe -DENABLE_YARR_JIT=0 -Wno-expansion-to-defined -Wno-class-memaccess -fno-delete-null-pointer-checks -fpermissive",
-            "cxxflags-override": true,
-            "config-opts": [
-              "--disable-jit"
-            ]
-          }
-        }
-      },
-      "cleanup": [
-        "*.la",
-        "/bin",
-        "/include",
-        "/lib/pkgconfig",
-        "/share/doc",
-        "/share/gtk-doc"
-      ]
-    },
     {
       "name": "pycairo",
       "buildsystem": "meson",
@@ -235,8 +180,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://poppler.freedesktop.org/poppler-0.81.0.tar.xz",
-          "sha256": "212d020b035b67b36c9666bd08ac778dff3222d85c01c338787d546f0f9bfe02"
+          "url": "https://poppler.freedesktop.org/poppler-0.87.0.tar.xz",
+          "sha256": "6f602b9c24c2d05780be93e7306201012e41459f289b8279a27a79431ad4150e"
         }
       ],
       "cleanup": [
@@ -348,8 +293,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs927/ghostscript-9.27.tar.gz",
-          "sha512": "9ad7bd24b6d9b7d258e943783817be036a2e0234517baffa1016804ef9b6f3062fb5da20a890a0bfc9e58203ddcf25dc4465f5b3bf5e4a61db87bef0606a0884"
+          "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs952/ghostscript-9.52.tar.xz",
+          "sha512": "4c4a33884e1138bad553eee61fac1a72158297ad5c2ce46a4b36150848dea8158affaf2b902f4ff03e4f72ebc8154c198b618112624f409230a610b7648faa67"
         },
         {
           "type": "shell",
@@ -437,8 +382,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/xianyi/OpenBLAS/archive/v0.3.6.tar.gz",
-          "sha256": "e64c8fe083832ffbc1459ab6c72f71d53afd3b36e8497c922a15a06b72e9002f"
+          "url": "https://github.com/xianyi/OpenBLAS/archive/v0.3.9.tar.gz",
+          "sha256": "17d4677264dfbc4433e97076220adc79b050e4f8a083ea3f853a53af253bc380"
         }
       ],
       "cleanup": [
@@ -485,8 +430,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/strukturag/libde265/releases/download/v1.0.3/libde265-1.0.3.tar.gz",
-          "sha256": "e4206185a7c67d3b797d6537df8dcaa6e5fd5a5f93bd14e65a755c33cd645f7a"
+          "url": "https://github.com/strukturag/libde265/releases/download/v1.0.5/libde265-1.0.5.tar.gz",
+          "sha256": "e3f277d8903408615a5cc34718b391b83c97c646faea4f41da93bac5ee08a87f"
         }
       ],
       "cleanup": [
@@ -508,8 +453,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/strukturag/libheif/releases/download/v1.5.1/libheif-1.5.1.tar.gz",
-          "sha256": "b134d0219dd2639cc13b8a8bcb8f264834593dd0417da1973fbe96e810918a8b"
+          "url": "https://github.com/strukturag/libheif/releases/download/v1.6.2/libheif-1.6.2.tar.gz",
+          "sha256": "bb229e855621deb374f61bee95c4642f60c2a2496bded35df3d3c42cc6d8eefc"
         }
       ],
       "cleanup": [
