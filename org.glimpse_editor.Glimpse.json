@@ -430,8 +430,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/strukturag/libde265/releases/download/v1.0.5/libde265-1.0.5.tar.gz",
-          "sha256": "e3f277d8903408615a5cc34718b391b83c97c646faea4f41da93bac5ee08a87f"
+          "url": "https://github.com/strukturag/libde265/releases/download/v1.0.8/libde265-1.0.8.tar.gz",
+          "sha256": "24c791dd334fa521762320ff54f0febfd3c09fc978880a8c5fbc40a88f21d905"
         }
       ],
       "cleanup": [
@@ -453,8 +453,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/strukturag/libheif/releases/download/v1.6.2/libheif-1.6.2.tar.gz",
-          "sha256": "bb229e855621deb374f61bee95c4642f60c2a2496bded35df3d3c42cc6d8eefc"
+          "url": "https://github.com/strukturag/libheif/releases/download/v1.12.0/libheif-1.12.0.tar.gz",
+          "sha256": "e1ac2abb354fdc8ccdca71363ebad7503ad731c84022cf460837f0839e171718"
         }
       ],
       "cleanup": [
@@ -472,8 +472,8 @@
         {
           "type": "git",
           "url": "https://gitlab.gnome.org/GNOME/babl.git",
-          "tag": "BABL_0_1_74",
-          "commit": "501c71495c9f4670ee066e3abe2ad6710e954084"
+          "tag": "BABL_0_1_86",
+          "commit": "92cfdacd51abb8bd6ff10edd800ef8b81e7ccf52"
         }
       ]
     },
@@ -506,7 +506,7 @@
         {
           "type": "git",
         "url": "https://github.com/glimpse-editor/glimpse",
-        "branch": "v0.2.0r2"
+        "branch": "v0.2.0"
         }
       ],
       "cleanup": [
