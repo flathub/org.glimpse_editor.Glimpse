@@ -514,8 +514,8 @@
       "sources": [
         {
           "type": "git",
-        "url": "https://github.com/glimpse-editor/glimpse",
-        "branch": "v0.2.0"
+          "url": "https://github.com/glimpse-editor/glimpse",
+          "tag": "v0.2.0r2"
         }
       ],
       "cleanup": [
